@@ -1,0 +1,73 @@
+.header {
+  color: white;
+}
+
+.gamesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.gamesWrapper {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 250px;
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: 250px 250px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    grid-template-columns: 220px 220px 220px 220px 220px;
+  }
+}
+
+.pageNumber {
+  width: 250px;
+
+  @media screen and (min-width: 600px) {
+    width: 525px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    width: 100%;
+  }
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+
+  @media screen and (min-width: 600px) {
+    width: 525px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+.searchText {
+  color: white;
+  width: 80%;
+
+  @media screen and (min-width: 600px) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1230px) {
+    width: 100%;
+  }
+}
+
+.span {
+  display: block;
+}
